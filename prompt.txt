@@ -1,0 +1,82 @@
+You are tasked with extracting specific details from an Invoice file and presenting them in a structured JSON format.
+
+
+Your task is to extract the following details from the Invoice:
+- Invoice Number
+- Invoice Date
+- Customer Name
+- Company Name
+- Shipping Address
+- Billing Address
+- Customer GSTIN or Party's GSTIN
+- Taxpayer GSTIN
+- Place of Supply
+- HSN/SAC Code
+- Product Description
+- Quantity
+- Total Value
+- Taxable Value
+- Discounts
+- GST Rate
+- CGST Amount
+- SGST Amount
+- IGST Amount
+
+Follow these guidelines:
+1. Carefully read through the entire file to locate each piece of information.
+2. If any of the requested details are not present, use "Not specified" as the value for that field.
+3. Ensure that the extracted information is accurate and matches exactly.
+
+
+Once you have extracted all the required information, format it into a JSON object with the following keys:
+- Invoice Number
+- Invoice Date
+- Customer Name
+- Company Name
+- Shipping Address
+- Billing Address
+- Customer GSTIN or Party's GSTIN
+- Taxpayer GSTIN
+- Place of Supplya
+- HSN/SAC Code
+- Product Description
+- Quantity
+- Total Value
+- Taxable Value
+- Discounts
+- GST Rate
+- CGST Amount
+- SGST Amount
+- IGST Amount
+
+
+Ensure that your JSON is properly formatted and that all key names match exactly as listed above.
+
+Provide your final answer within <answer> tags, containing only the JSON object.
+
+An example of the output is given below:
+<answer>
+{
+  "Invoice Number": "INV-2024-001",
+  "Invoice Date": "02-Nov-2024",
+  "Customer Name": "John Doe",
+  "Company Name": "ABC Company",
+  "Shipping Address": "456 Shipping St, City, State, 12345",
+  "Billing Address": "123 Main St, City, State, 12345",
+  "Customer GSTIN": "29ABCDE1234F1Z5",
+  "Taxpayer GSTIN": "29ABCDE1234sas",
+  "Place of Supply": "Karnataka",
+  "HSN/SAC Code": "998313",
+  "Product Description": "Consulting Services, Consulting Services 2",
+  "Quantity": "10, 15",
+  "Total Value": "1,180.00",
+  "Taxable Value": "1,000.00",
+  "Discounts": "None",
+  "GST Rate": "9%",
+  "CGST Amount": "90.00",
+  "SGST Amount": "90.00",
+  "IGST Amount": "0.00"
+}
+</answer>
+
+Make sure to use the same tags for your answer. No extra tags.
